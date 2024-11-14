@@ -1,10 +1,7 @@
-import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom'
 import {FieldValues, useForm} from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import apiClient from '../utils/apiClient'
-import { useNavigate } from "react-router-dom";
 import { UserConsumer } from '../contexts/userContext';
 
 const schema = z.object({
@@ -18,7 +15,6 @@ type FormData = z.infer<typeof schema>;
 
 function Login() {
   const { register, handleSubmit, formState: {errors} } = useForm<FormData>({resolver: zodResolver(schema)});
-  const navigate = useNavigate();
   const { loginUser } = UserConsumer();
 
   const onSubmit =  (data: FieldValues) => {

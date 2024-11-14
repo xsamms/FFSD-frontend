@@ -1,10 +1,8 @@
 import { Post } from '../utils/types'
 import { UserConsumer } from '../contexts/userContext';
-import { useQuery } from '@tanstack/react-query';
-import apiClient from '../utils/apiClient';
 import PostCard from '../components/PostCard';
 import { PostConsumer } from '../contexts/postContext';
-import { Link } from 'react-router-dom';
+
 
 
 

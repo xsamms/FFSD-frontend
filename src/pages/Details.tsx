@@ -1,5 +1,3 @@
-import React from 'react'
-import { Post } from '../utils/types';
 import { useLocation } from 'react-router-dom';
 
 

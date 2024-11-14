@@ -1,10 +1,8 @@
 import React, { useEffect, useState, createContext } from "react";
 import { Post } from "../utils/types";
 import apiClient from "../utils/apiClient";
-import axios from "axios";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
 import { UserConsumer } from "./userContext";
 
 type postContectType = {
