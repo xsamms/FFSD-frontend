@@ -29,7 +29,7 @@ function Login() {
           <h2 className="text-gray-800 text-center text-2xl font-bold">Login</h2>
           <form onSubmit={handleSubmit(onSubmit)} className="mt-8 space-y-4">
             <div>
-              <label className="text-gray-800 text-sm mb-2 block">User name</label>
+              <label className="text-gray-800 text-sm mb-2 block">Email</label>
               <div className="relative flex items-center">
                 <input {...register('email')} type="email" className="w-full text-gray-800 text-sm border border-gray-300 px-4 py-3 rounded-md outline-blue-600" placeholder="Enter your email" />
                 <svg viewBox="0 0 8 6" fill="#bbb" className="w-4 h-4 absolute right-4" stroke="#bbb" xmlns="http://www.w3.org/2000/svg">
