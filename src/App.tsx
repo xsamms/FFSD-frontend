@@ -16,6 +16,8 @@ import Login from './pages/Login.tsx';
 import Register from './pages/Register.tsx';
 import {PostProvider} from './contexts/postContext.tsx';
 import { UserProvider } from './contexts/userContext.tsx';
+import VerifyEmail from './components/VerifyEmail.tsx';
+import Update from './pages/Update.tsx';
 
 
 function App() {
@@ -59,6 +61,14 @@ function App() {
         {
           path: "/register",
           element: <Register />
+        },
+        {
+          path: "/update/:id",
+          element: <Update />
+        },
+        {
+          path: "/users/:id/verify/:token",
+           element: <VerifyEmail />
         }
       ]
     },

@@ -71,7 +71,10 @@ export const PostProvider = ({ children }: Props) => {
     }
 
     const updatePost = (id: number, post: Post) => {
-      apiClient.put(`/posts/${id}`, {post}, {
+      const title = post.title;
+      const content = post.content;
+      const categoryId = post.categoryId;
+      apiClient.patch(`/posts/${id}`, {title, content, categoryId}, {
         headers: {
           Authorization: `Bearer ${token}`
         }

@@ -6,6 +6,7 @@ function Details() {
   const { data } = location.state;
   // const { state } = props.location;
   // const {data} = state;
+  console.log(data);
   return (
     <div className='relative container mx-auto flex-wrap pt-20'>
       <div>   
