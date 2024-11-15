@@ -9,7 +9,7 @@ function VerifyEmail() {
 	useEffect(() => {
 		const verifyEmailUrl = async () => {
 			try {
-				const url = `http://localhost:5001/api/users/${param.id}/verify/${param.token}`;
+				const url = `https://ffsd-frontend.onrender.com/api/users/${param.id}/verify/${param.token}`;
 				const { data } = await apiClient.get(url);
 				console.log(data);
 				setValidUrl(true);
