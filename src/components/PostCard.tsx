@@ -7,7 +7,7 @@ type props = {
     handleUpdate: (id: number, post: Post) => void
 }
 
-function PostCard({data, handleDelete, handleUpdate}: props) {
+function PostCard({data, handleDelete}: props) {
   return (
         <div key={data.id} className="flex">
           <div className="p-4">
